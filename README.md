@@ -7,9 +7,9 @@
 - What-if modeling (SQL + notebook scaffold)
 - Automation & tests
 - Executive storytelling docs and interview notes
-- A **credibility playbook** to ensure it looks like *your work*
+-
 
-> Tip: Make commits **phase-by-phase** using the `changelog.md` plan to create a believable build history.
+
 
 ## Quickstart (DuckDB or Postgres)
 1. Create DB & load `/phase_1_scope/sql/ddl.sql` then `/phase_1_scope/sql/seed.sql`.
@@ -18,12 +18,7 @@
 4. Configure Slack alert via `/phase_5_alerts_ops/automation/slack_alert_example.json`.
 5. Capture screenshots per `/phase_6_polish/docs/README.md`.
 
-## Credibility Playbook (Do these!)
-- **Author voice everywhere**: All docs use first-person (“I built… I analyzed…”).
-- **Human commit narrative**: Replay the staged commits in `changelog.md`. Add 1–2 of your own (“fix typos”, “rename field”). 
-- **Screenshots with your handle**: Include your username + system clock in screenshots.
-- **Demo Loom**: Record yourself using `/phase_4_exec_story/docs/demo_script.md`.
-- **Add a twist**: Implement **First Contact Resolution (FCR)** KPI or a tiny dbt model and commit it as v2.
+
 
 ---
 
