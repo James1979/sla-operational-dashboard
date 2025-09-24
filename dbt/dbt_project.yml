@@ -1,0 +1,19 @@
+name: 'sla_operational_dashboard'
+version: '1.0.0'
+config-version: 2
+
+profile: 'sla_operational_dashboard'
+
+model-paths: ['dbt/models']
+target-path: 'dbt/target'
+clean-targets: ['dbt/target']
+
+models:
+  sla_operational_dashboard:
+    +materialized: view
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

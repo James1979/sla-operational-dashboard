@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_cases
+    columns:
+      - name: case_id
+        tests: [not_null, unique]
+      - name: expected_delivery_date
+        tests: [not_null]
+
+  - name: stg_deliveries
+    columns:
+      - name: delivery_id
+        tests: [not_null, unique]
+      - name: case_id
+        tests: [not_null]
+
+  - name: fct_sla
+    columns:
+      - name: delivery_day
+        tests: [not_null]
+      - name: region
+        tests: [not_null]
+      - name: sla_pct
+        tests:
+          - not_null

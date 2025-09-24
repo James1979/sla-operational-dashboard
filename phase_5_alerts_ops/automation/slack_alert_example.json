@@ -1,0 +1,27 @@
+{
+  "alert_name": "SLA_Compliance_Breach",
+  "trigger_condition": {
+    "metric": "daily_sla_compliance_rate",
+    "operator": "less_than",
+    "threshold": 0.95,
+    "evaluation_period": "1_day"
+  },
+  "slack_webhook": {
+    "url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL",
+    "channel": "#operations-alerts",
+    "username": "SLA Monitor",
+    "icon_emoji": ":warning:"
+  },
+  "message_template": {
+    "text": "\ud83d\udea8 SLA Compliance Alert",
+    "blocks": [
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "SLA dropped below 95%. Investigate dashboard."
+        }
+      }
+    ]
+  }
+}

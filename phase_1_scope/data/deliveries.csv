@@ -1,0 +1,2 @@
+delivery_id,case_id,delivery_date,delivery_method,pages_count,quality_score,is_on_time
+DLV000001,CSE000001,2024-01-10 17:00,Email,120,4.6,1

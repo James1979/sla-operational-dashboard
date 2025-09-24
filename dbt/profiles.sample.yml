@@ -1,0 +1,9 @@
+# Copy this to ~/.dbt/profiles.yml and adjust paths as needed.
+
+sla_operational_dashboard:
+  target: duckdb
+  outputs:
+    duckdb:
+      type: duckdb
+      path: dbt/sla_ops.duckdb
+      threads: 4

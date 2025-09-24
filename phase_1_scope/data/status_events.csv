@@ -1,0 +1,2 @@
+event_id,case_id,event_type,event_timestamp,created_by,notes
+EVT000001,CSE000002,Reschedule,2024-01-06 09:00,ops_user,Client requested new date
