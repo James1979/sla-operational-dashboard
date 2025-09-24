@@ -1,6 +1,6 @@
 # Steno SLA & Operational Performance Dashboard (Starter Repo)
 
-This is a **starter kit** generated from your GenSpark master prompt output. It includes:
+ 
 - A ready-to-run **file tree** split into phases
 - SQL for schema, seeds, and KPIs
 - Looker LookML views/explore/dashboard
